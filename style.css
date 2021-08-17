@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    height: 100vh;
 }
 
 nav{
@@ -22,12 +23,12 @@ nav{
     list-style-type: none;
 }
 
-a{
+.nav-link{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-a:hover{
+.nav-link:hover{
     text-decoration: underline;
 }
 
@@ -73,7 +74,102 @@ a:hover{
     justify-content: space-between;
 }
 
+.search-input:hover{
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.075);
+}
+
 input{
     border: none;
     width: 90%;
+}
+
+.buttons{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cta{
+    margin: 0 20px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 30px;
+}
+
+.cta:hover{
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.languages{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* end of main section */
+
+/* Start of footer */
+
+footer{
+    background-color: rgb(231, 231, 231);
+    margin-top: 100px;
+    padding: 5px 0;
+}
+
+h5{
+    font-size: 1em;
+    color: rgb(83, 83, 83);
+    margin-left: 20px;
+}
+
+
+
+
+.footer-links{
+    display: flex;
+}
+
+.f-link{
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.f-link > a{
+    font-size: 0.9em;
+    color: black;
+}
+
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+
+/* end of footer */
+
+/* Responsive */
+
+@media screen and (max-width: 365px) {
+    nav{
+        justify-content: center;
+    }
+
+    .search-input{
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .bottom-section{
+        flex-direction: column;
+        text-align: center;
+    }
 }
