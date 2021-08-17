@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+}
+
+#nav{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.sign-in{
+    background-color: rgb(18, 90, 223);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.sign-in:hover{
+    background-color: rgb(19, 97, 243);
+    cursor: pointer;
+}
